@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>INSMART - Welcome</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Arial,Helvetica,sans-serif;background:#fff;color:#073b70;display:grid;place-items:center}
+.screen{width:100%;max-width:430px;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px 24px;background:linear-gradient(180deg,#07529a 0%,#2d78b8 38%,#eaf4ff 38%,#ffffff 100%);text-align:center}
+.kicker{font-size:18px;font-weight:700;letter-spacing:2px;color:#ffffff;margin-bottom:18px}
+.brand{font-size:clamp(54px,15vw,76px);line-height:1;font-weight:900;letter-spacing:3px;color:#07529a;text-shadow:0 3px 0 #c8def5;margin:0}
+.rule{width:90px;height:5px;border-radius:9px;background:#e3b341;margin:24px 0}
+.loading{width:190px;height:7px;border-radius:10px;background:#d2e2f2;overflow:hidden;margin-top:28px}
+.loading span{display:block;height:100%;width:0;background:#07529a;border-radius:10px;animation:load 2.8s linear forwards}
+.status{font-size:13px;letter-spacing:1.5px;color:#426987;margin-top:12px}
+.note{font-size:11px;line-height:1.5;color:#6a7f90;margin-top:35px;max-width:310px}
+@keyframes load{to{width:100%}}
+@media(min-width:500px){.screen{min-height:850px;height:92vh;border-radius:28px;box-shadow:0 10px 45px #8ba9c433}}
+</style>
+</head>
+<body>
+<main class="screen">
+  <div class="kicker">WELCOME TO INDIAN BANK</div>
+  <h1 class="brand">INSMART</h1>
+  <div class="rule"></div>
+  <div class="loading" role="progressbar" aria-label="Loading"><span></span></div>
+  <div class="status">LOADING…</div>
+  <p class="note">Unofficial INSMART demo screen. Not an official Indian Bank app or service.</p>
+</main>
+<script>
+setTimeout(function(){ window.location.href = "page2.html"; }, 3000);
+</script>
+</body>
+</html>
