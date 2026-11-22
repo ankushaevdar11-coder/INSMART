@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>INSMART — Account Statement Demo</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#e8eef5;font-family:Arial,Helvetica,sans-serif;color:#34495e}
+.phone{width:min(100%,430px);min-height:100vh;margin:auto;background:#fff;box-shadow:0 0 24px #0002;position:relative;overflow:hidden}
+.demo{position:sticky;top:0;z-index:5;background:#fff3cd;color:#7a4d00;text-align:center;font-size:11px;font-weight:800;letter-spacing:1px;padding:8px;border-bottom:1px solid #e7c76b}
+.top{height:112px;background:linear-gradient(145deg,#e6a51d 0 42%,#0872b9 43% 100%);color:white;display:flex;align-items:center;justify-content:space-between;padding:20px 22px;border-radius:0 0 22px 22px}
+.top strong{font-size:22px}
+.top span{font-size:25px}
+.content{padding:20px 22px 35px}
+.account{font-size:19px;margin:0 0 8px}
+.number{color:#17649b;font-size:18px;margin-bottom:25px}
+.summary{display:flex;justify-content:space-between;gap:12px;font-size:17px;margin-bottom:22px}
+.search{border:1px solid #d8e0e8;border-radius:12px;padding:15px;color:#9aa7b2;margin-bottom:24px}
+.fraud{text-align:right;color:#2673a8;font-weight:700;letter-spacing:1px;margin:0 4px 26px}
+.download{text-align:right;color:#2673a8;font-size:22px;margin-bottom:12px}
+.txn{padding:16px 2px 20px;border-bottom:1px solid #edf0f3;min-height:145px}
+.txnhead{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;font-size:16px}
+.date{color:#526477}
+.amount{text-align:right;white-space:nowrap;font-weight:700;color:#b05b73}
+.amount.credit{color:#3b947d}
+.balance{text-align:right;color:#276d9f;font-size:15px;margin-top:7px}
+.desc{font-size:15px;line-height:1.55;margin-top:22px;overflow-wrap:anywhere;color:#4d5d6c}
+.watermark{position:fixed;left:50%;top:52%;transform:translate(-50%,-50%) rotate(-28deg);font-size:27px;font-weight:900;letter-spacing:3px;color:#0b5790;opacity:.09;white-space:nowrap;pointer-events:none;z-index:4}
+.footer{padding:16px;text-align:center;font-size:11px;color:#6f7f8d;background:#f6f8fa}
+</style>
+</head>
+<body>
+<div class="phone">
+  <div class="demo">DEMO ONLY • NOT AN OFFICIAL BANK STATEMENT</div>
+  <header class="top"><strong>‹ &nbsp; Account Statement</strong><span>⌂</span></header>
+  <main class="content">
+    <p class="account">My Savings</p>
+    <div class="number">8442610123 ◉</div>
+    <div class="summary"><span>Last 30 Transactions</span><strong>Bal: ₹13.00</strong></div>
+    <div class="search">Search Transaction　　⌕</div>
+    <p class="fraud">Report Fraud</p>
+    <div class="download">⇩</div>
+
+    <section class="txn">
+      <div class="txnhead"><span class="date">22 Nov 2026</span><div><div class="amount">₹1.00 DR ↗</div><div class="balance">Cur Bal: ₹13.00</div></div></div>
+      <div class="desc">KARB0000460/BODDEPALLIAKSHAT RA J/XXXXXX71984/jaronline@ybl/UPI/007271191449/Paid via Navi UPI</div>
+    </section>
+    <section class="txn">
+      <div class="txnhead"><span class="date">21 Nov 2026</span><div><div class="amount">₹10.00 DR ↗</div><div class="balance">Cur Bal: ₹14.00</div></div></div>
+      <div class="desc">UBIN0574066/VIKASH/XXXXX71939/mohdansariadi-1@okaxis/UPI/007235008416/Paid super fast with</div>
+    </section>
+    <section class="txn">
+      <div class="txnhead"><span class="date">20 Nov 2026</span><div><div class="amount credit">₹5.00 CR ↙</div><div class="balance">Cur Bal: ₹24.00</div></div></div>
+      <div class="desc">ICIC0DC0099/NAVI LIMITED/XXXXX30249/navirewards@icici/UPI/111239913682/Upi Fund transfer fr</div>
+    </section>
+    <section class="txn">
+      <div class="txnhead"><span class="date">20 Nov 2026</span><div><div class="amount">₹1.00 DR ↗</div><div class="balance">Cur Bal: ₹19.00</div></div></div>
+      <div class="desc">KARB0000460/BODDEPALLIAKSHAT RA J/XXXXXX71984/jaronline@ybl/UPI/669098048929/Paid super fast with</div>
+    </section>
+    <section class="txn">
+      <div class="txnhead"><span class="date">20 Nov 2026</span><div><div class="amount">₹1.00 DR ↗</div><div class="balance">Cur Bal: ₹20.00</div></div></div>
+      <div class="desc">YESB0YBLUPI/Al Karim chicken center/XXXXX/q974684724@ybl/UPI/061217247824/G</div>
+    </section>
+    <section class="txn">
+      <div class="txnhead"><span class="date">20 Nov 2026</span><div><div class="amount">₹2.00 DR ↗</div><div class="balance">Cur Bal: ₹21.00</div></div></div>
+      <div class="desc">CBDC/L/BANK/INB4uZgtNi9zXy9iqbFullRftvbw9FV2GP8</div>
+    </section>
+    <section class="txn">
+      <div class="txnhead"><span class="date">19 Nov 2026</span><div><div class="amount">₹1,000.00 DR ↗</div><div class="balance">Cur Bal: ₹23.00</div></div></div>
+      <div class="desc">TRAN DATE -(MMDD) 1119 TRAN TIME -(HHMMSS) 163158/SELF-OLYMPUS HIG</div>
+    </section>
+  </main>
+  <div class="footer">Illustrative interface for design/testing only. Not issued by Indian Bank.</div>
+</div>
+<div class="watermark">DEMO ONLY</div>
+</body>
+</html>
